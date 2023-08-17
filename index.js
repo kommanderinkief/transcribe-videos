@@ -3,10 +3,10 @@ const https = require('https');
 const { execSync: exec } = require('child_process');
 const { Deepgram } = require('@deepgram/sdk');
 const ffmpegStatic = require('ffmpeg-static');
-const deepgram = new Deepgram(process.env.DG_KEY);
+const deepgram = new Deepgram("68a8eb3cb331bb16870a51811573370de021cfad");
 
 // Uncomment one of these
-// transcribeLocalVideo('deepgram.mp4');
+transcribeLocalVideo('AudioRecording.mp4');
 // transcribeRemoteVideo('https://rawcdn.githack.com/deepgram-devs/transcribe-videos/62fc7769d6e2bf38e420ee5224060922af4546f7/deepgram.mp4');
 
 async function transcribeLocalVideo(filePath) {
